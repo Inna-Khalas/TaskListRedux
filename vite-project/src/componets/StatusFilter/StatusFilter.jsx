@@ -1,9 +1,9 @@
+import { setStatusFilter } from "../../redux/filterSlice";
 import Button from "../Button/Button";
-import { useSelector, useDispatch } from "react-redux";
-import { setStatusFilter } from "../../redux/actions";
+import { useDispatch } from "react-redux";
 
 const StatusFilter = () => {
-  const filter = useSelector((state) => state.filters.status);
+  // const filter = useSelector((state) => state.filters.status);
   const dispatch = useDispatch();
 
   const handleStatusFilter = (filter) => dispatch(setStatusFilter(filter));
